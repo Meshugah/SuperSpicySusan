@@ -23,7 +23,7 @@
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Settings" />
             <item
                 android:id="@+id/rate_us"
                 android:icon="@drawable/ic_menu_send"

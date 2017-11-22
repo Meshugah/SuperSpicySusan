@@ -105,9 +105,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_inventory) {
             // Handle the camera action
-        } else if (id == R.id.nav_addItem) {
-
-        } else if (id == R.id.nav_notifications) {
+        }  else if (id == R.id.nav_notifications) {
 
         } else if (id == R.id.nav_logout) {
 
