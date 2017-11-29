@@ -33,24 +33,24 @@ public class MainActivity extends AppCompatActivity
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference spice1 = database.getReference("Spice1");
-        final DatabaseReference spice2 = database.getReference("Spice2");
-        final DatabaseReference spice3 = database.getReference("Spice3");
-        final DatabaseReference spice4 = database.getReference("Spice4");
-        final DatabaseReference spice5 = database.getReference("Spice5");
-        final DatabaseReference spice6 = database.getReference("Spice6");
-        final DatabaseReference spice7 = database.getReference("Spice7");
-        final DatabaseReference spice8 = database.getReference("Spice8");
-        final DatabaseReference spice9 = database.getReference("Spice9");
-        final DatabaseReference spice10 = database.getReference("Spice10");
-        final DatabaseReference spice11 = database.getReference("Spice11");
-        final DatabaseReference spice12 = database.getReference("Spice12");
-        final DatabaseReference spice13 = database.getReference("Spice13");
-        final DatabaseReference spice14 = database.getReference("Spice14");
-        final DatabaseReference spice15 = database.getReference("Spice15");
-        final DatabaseReference spice16 = database.getReference("Spice16");
-        final DatabaseReference spice17 = database.getReference("Spice17");
-        final DatabaseReference spice18 = database.getReference("Spice18");
+        final DatabaseReference spice1 = database.getReference("Anise");
+        final DatabaseReference spice2 = database.getReference("BlackCumin");
+        final DatabaseReference spice3 = database.getReference("BlackPepper");
+        final DatabaseReference spice4 = database.getReference("CarawaySeed");
+        final DatabaseReference spice5 = database.getReference("Cardamom");
+        final DatabaseReference spice6 = database.getReference("Cayenne");
+        final DatabaseReference spice7 = database.getReference("Chili");
+        final DatabaseReference spice8 = database.getReference("Coriander");
+        final DatabaseReference spice9 = database.getReference("Fenugreek");
+        final DatabaseReference spice10 = database.getReference("Garlic");
+        final DatabaseReference spice11 = database.getReference("Licorice");
+        final DatabaseReference spice12 = database.getReference("Mace");
+        final DatabaseReference spice13 = database.getReference("Mustard");
+        final DatabaseReference spice14 = database.getReference("Nutmeg");
+        final DatabaseReference spice15 = database.getReference("Paprika");
+        final DatabaseReference spice16 = database.getReference("Saffron");
+        final DatabaseReference spice17 = database.getReference("Sesame");
+        final DatabaseReference spice18 = database.getReference("Turmeric");
 
 
 
