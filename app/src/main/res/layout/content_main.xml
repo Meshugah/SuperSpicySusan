@@ -1,123 +1,985 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingTop="50dp">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.vignesh.buttonpress.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--SPICE 2 is all the way down-->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice1"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card1">
+     <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anise"
+                    android:id="@+id/spice1"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice1value"
+                    android:layout_toRightOf="@id/spice1"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice2"
-        android:layout_below="@id/spice1"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card2"
+        android:layout_below="@id/card1">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Black Cumin"
+                    android:id="@+id/spice2"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice2value"
+                    android:layout_toEndOf="@id/spice2"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice3"
-        android:layout_below="@id/spice2"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card3"
+        android:layout_below="@id/card2">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Black Pepper"
+                    android:id="@+id/spice3"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice3value"
+                    android:layout_toEndOf="@id/spice3"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice4"
-        android:layout_below="@id/spice3"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card4"
+        android:layout_below="@id/card3">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="CarawaySeed"
+                    android:id="@+id/spice4"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice4value"
+                    android:layout_toEndOf="@id/spice4"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice5"
-        android:layout_below="@id/spice4"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card5"
+        android:layout_below="@id/card4">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Cardamom"
+                    android:id="@+id/spice5"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice5value"
+                    android:layout_toEndOf="@id/spice5"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice6"
-        android:layout_below="@id/spice5"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card6"
+        android:layout_below="@id/card5">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Cayenne"
+                    android:id="@+id/spice6"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice6value"
+                    android:layout_toEndOf="@id/spice6"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice7"
-        android:layout_below="@id/spice6"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card7"
+        android:layout_below="@id/card6">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Chili"
+                    android:id="@+id/spice7"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice7value"
+                    android:layout_toEndOf="@id/spice7"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice8"
-        android:layout_below="@id/spice7"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card8"
+        android:layout_below="@id/card7">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Coriander"
+                    android:id="@+id/spice8"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice8value"
+                    android:layout_toEndOf="@id/spice8"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice9"
-        android:layout_below="@id/spice8"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card9"
+        android:layout_below="@id/card8">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Fenugreek"
+                    android:id="@+id/spice9"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice9value"
+                    android:layout_toEndOf="@id/spice9"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice10"
-        android:layout_below="@id/spice9"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card10"
+        android:layout_below="@id/card9">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Garlic"
+                    android:id="@+id/spice10"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice10value"
+                    android:layout_toEndOf="@id/spice10"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice11"
-        android:layout_below="@id/spice10"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card11"
+        android:layout_below="@id/card10">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Licorice"
+                    android:id="@+id/spice11"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice11value"
+                    android:layout_toEndOf="@id/spice11"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice12"
-        android:layout_below="@id/spice11"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card12"
+        android:layout_below="@id/card11">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Mace"
+                    android:id="@+id/spice12"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice12value"
+                    android:layout_toEndOf="@id/spice12"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice13"
-        android:layout_below="@id/spice12"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card13"
+        android:layout_below="@id/card12">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Mustard"
+                    android:id="@+id/spice13"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice13value"
+                    android:layout_toEndOf="@id/spice13"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice14"
-        android:layout_below="@id/spice13"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card14"
+        android:layout_below="@id/card13">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Nutmeg"
+                    android:id="@+id/spice14"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice14value"
+                    android:layout_toEndOf="@id/spice14"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice15"
-        android:layout_below="@id/spice14"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card15"
+        android:layout_below="@id/card14">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Paprika"
+                    android:id="@+id/spice15"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice15value"
+                    android:layout_toEndOf="@id/spice15"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice16"
-        android:layout_below="@id/spice15"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/card16"
+        android:layout_below="@id/card15">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Saffron"
+                    android:id="@+id/spice16"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice16value"
+                    android:layout_toEndOf="@id/spice16"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice17"
-        android:layout_below="@id/spice16"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/spice18"
-        android:layout_below="@id/spice17"/>
+        android:layout_margin="16dp"
+        android:id="@+id/card17"
+        android:layout_below="@id/card16">
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sesame"
+                    android:id="@+id/spice17"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:id="@+id/spice17value"
+                    android:layout_toEndOf="@id/spice17"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="share"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="explore"
+                    android:theme="@style/PrimaryFlatButton" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
 </RelativeLayout>
+
+
+</ScrollView>

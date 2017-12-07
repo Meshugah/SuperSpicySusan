@@ -56,14 +56,14 @@ public class MainActivity extends AppCompatActivity
 
 
         //textview stuff
-        final TextView tv1 = (TextView)findViewById(R.id.spice1);
+        final TextView tv1 = (TextView)findViewById(R.id.spice1value);
 
 
         spice1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv1.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv1.setText(Integer.toString(value));
 
             }
 
@@ -74,14 +74,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv2 = (TextView)findViewById(R.id.spice2);
+        final TextView tv2 = (TextView)findViewById(R.id.spice2value);
 
 
         spice2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv2.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv2.setText(Integer.toString(value));
 
             }
 
@@ -92,14 +92,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv3 = (TextView)findViewById(R.id.spice3);
+        final TextView tv3 = (TextView)findViewById(R.id.spice3value);
 
 
         spice3.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv3.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv3.setText(Integer.toString(value));
 
             }
 
@@ -110,14 +110,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv4 = (TextView)findViewById(R.id.spice4);
+        final TextView tv4 = (TextView)findViewById(R.id.spice4value);
 
 
         spice4.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv4.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv4.setText(Integer.toString(value));
 
             }
 
@@ -128,14 +128,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv5 = (TextView)findViewById(R.id.spice5);
+        final TextView tv5 = (TextView)findViewById(R.id.spice5value);
 
 
         spice5.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv5.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv5.setText(Integer.toString(value));
 
             }
 
@@ -146,14 +146,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv6 = (TextView)findViewById(R.id.spice6);
+        final TextView tv6 = (TextView)findViewById(R.id.spice6value);
 
 
         spice6.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv6.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv6.setText(Integer.toString(value));
 
             }
 
@@ -164,14 +164,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv7 = (TextView)findViewById(R.id.spice7);
+        final TextView tv7 = (TextView)findViewById(R.id.spice7value);
 
 
         spice7.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv7.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv7.setText(Integer.toString(value));
 
             }
 
@@ -182,14 +182,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv8 = (TextView)findViewById(R.id.spice8);
+        final TextView tv8 = (TextView)findViewById(R.id.spice8value);
 
 
         spice8.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv8.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv8.setText(Integer.toString(value));
 
             }
 
@@ -200,14 +200,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv9 = (TextView)findViewById(R.id.spice9);
+        final TextView tv9 = (TextView)findViewById(R.id.spice9value);
 
 
         spice9.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv9.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv9.setText(Integer.toString(value));
 
             }
 
@@ -218,14 +218,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv10 = (TextView)findViewById(R.id.spice10);
+        final TextView tv10 = (TextView)findViewById(R.id.spice10value);
 
 
         spice10.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv10.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv10.setText(Integer.toString(value));
 
             }
 
@@ -236,14 +236,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv11 = (TextView)findViewById(R.id.spice11);
+        final TextView tv11 = (TextView)findViewById(R.id.spice11value);
 
 
         spice11.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv11.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv11.setText(Integer.toString(value));
 
             }
 
@@ -254,14 +254,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv12 = (TextView)findViewById(R.id.spice12);
+        final TextView tv12 = (TextView)findViewById(R.id.spice12value);
 
 
         spice12.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv12.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv12.setText(Integer.toString(value));
 
             }
 
@@ -272,14 +272,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv13 = (TextView)findViewById(R.id.spice13);
+        final TextView tv13 = (TextView)findViewById(R.id.spice13value);
 
 
         spice13.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv13.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv13.setText(Integer.toString(value));
 
             }
 
@@ -289,14 +289,14 @@ public class MainActivity extends AppCompatActivity
             }
         });
         //textview stuff
-        final TextView tv14 = (TextView)findViewById(R.id.spice14);
+        final TextView tv14 = (TextView)findViewById(R.id.spice14value);
 
 
         spice14.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv14.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv14.setText(Integer.toString(value));
 
             }
 
@@ -307,14 +307,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv15 = (TextView)findViewById(R.id.spice15);
+        final TextView tv15 = (TextView)findViewById(R.id.spice15value);
 
 
         spice15.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv15.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv15.setText(Integer.toString(value));
 
             }
 
@@ -325,14 +325,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv16 = (TextView)findViewById(R.id.spice16);
+        final TextView tv16 = (TextView)findViewById(R.id.spice16value);
 
 
         spice16.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv16.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv16.setText(Integer.toString(value));
 
             }
 
@@ -343,14 +343,14 @@ public class MainActivity extends AppCompatActivity
         });
 
         //textview stuff
-        final TextView tv17 = (TextView)findViewById(R.id.spice17);
+        final TextView tv17 = (TextView)findViewById(R.id.spice17value);
 
 
         spice17.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv17.setText(value);
+                int value = dataSnapshot.getValue(int.class);
+                tv17.setText(Integer.toString(value));
 
             }
 
@@ -360,23 +360,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        //textview stuff
-        final TextView tv18 = (TextView)findViewById(R.id.spice18);
 
-
-        spice18.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                tv18.setText(value);
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
         //FAB
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         final boolean[] flag = {true};
