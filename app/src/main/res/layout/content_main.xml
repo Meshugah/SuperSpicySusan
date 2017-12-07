@@ -59,12 +59,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -117,12 +122,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -175,12 +185,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -233,12 +248,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -289,12 +309,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -345,12 +370,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -401,12 +431,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -457,12 +492,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -514,12 +554,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -570,12 +615,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -627,12 +677,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -684,12 +739,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -740,12 +800,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -797,12 +862,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -853,12 +923,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -909,12 +984,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -965,12 +1045,17 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="share"
+                    android:text="Add"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="explore"
+                    android:text="Request"
+                    android:theme="@style/PrimaryFlatButton" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
