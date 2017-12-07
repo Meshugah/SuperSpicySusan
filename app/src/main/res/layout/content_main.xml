@@ -59,17 +59,13 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="Request"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return1"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -119,11 +115,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -133,6 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return2"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -182,11 +175,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -196,6 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return3"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -245,11 +235,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -306,11 +292,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -320,6 +302,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return4"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -367,11 +350,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -381,6 +360,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return5"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -428,11 +408,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -442,6 +418,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return6"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -489,11 +466,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -503,6 +476,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+
+                    android:id="@+id/button_return7"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -551,11 +526,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -565,6 +536,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+
+                    android:id="@+id/button_return8"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -612,11 +585,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -626,6 +595,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+
+                    android:id="@+id/button_return9"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -674,11 +645,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -688,6 +655,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+
+                    android:id="@+id/button_return10"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -736,11 +705,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -750,6 +715,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+
+                    android:id="@+id/button_return11"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -797,11 +764,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -811,6 +774,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return12"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -859,11 +823,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -873,6 +833,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return13"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -920,11 +881,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -934,6 +891,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return14"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -981,11 +939,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -995,6 +949,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return15"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -1042,11 +997,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:theme="@style/PrimaryFlatButton" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -1056,6 +1007,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return16"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 

@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -55,6 +56,155 @@ public class MainActivity extends AppCompatActivity
         final DatabaseReference spice16 = database.getReference("Saffron");
         final DatabaseReference spice17 = database.getReference("Sesame");
         final DatabaseReference spice18 = database.getReference("Turmeric");
+
+        //returned
+        final DatabaseReference spiceBeingReturned = database.getReference("SpiceBeingReturned");
+        final DatabaseReference spiceReturnedSuccess = database.getReference("SpiceReturnedSuccess");
+
+
+
+
+        //Returns
+        Button button1return = (Button) findViewById(R.id.button_return1);
+        button1return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v1) {
+                spiceBeingReturned.setValue(1);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button2return = (Button) findViewById(R.id.button_return2);
+        button2return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(2);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button3return = (Button) findViewById(R.id.button_return3);
+        button3return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(3);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button4return = (Button) findViewById(R.id.button_return4);
+        button4return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(4);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button5return = (Button) findViewById(R.id.button_return5);
+        button5return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(5);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button6return = (Button) findViewById(R.id.button_return6);
+        button6return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(6);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button7return = (Button) findViewById(R.id.button_return7);
+        button7return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(7);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button8return = (Button) findViewById(R.id.button_return8);
+        button8return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(8);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button9return = (Button) findViewById(R.id.button_return9);
+        button9return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(9);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button10return = (Button) findViewById(R.id.button_return10);
+        button10return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(10);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button11return = (Button) findViewById(R.id.button_return11);
+        button11return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(11);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button12return = (Button) findViewById(R.id.button_return12);
+        button12return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(12);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button13return = (Button) findViewById(R.id.button_return13);
+        button13return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(13);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button14return = (Button) findViewById(R.id.button_return14);
+        button14return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(14);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+        //Returns
+        Button button15return = (Button) findViewById(R.id.button_return15);
+        button15return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(15);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+
+        //Returns
+        Button button16return = (Button) findViewById(R.id.button_return16);
+        button16return.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingReturned.setValue(16);
+                spiceReturnedSuccess.setValue(0);
+            }
+        });
+
+//
+//        //Request
+//        Button button1request = (Button) findViewById(R.id.button_request1);
+//        button1request.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                spiceBeingRequested.setValue(1);
+//                spiceRequestedSuccess.setValue(0);
+//            }
+//        });
+
+
 
 
 
