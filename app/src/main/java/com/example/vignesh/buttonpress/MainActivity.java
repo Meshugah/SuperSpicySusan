@@ -13,8 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.Transformation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -57,12 +60,40 @@ public class MainActivity extends AppCompatActivity
         final DatabaseReference spice17 = database.getReference("Sesame");
         final DatabaseReference spice18 = database.getReference("Turmeric");
 
+        //Inventory
+        final DatabaseReference InventoryStart = database.getReference("InventoryStart");
+
+
         //returned
         final DatabaseReference spiceBeingReturned = database.getReference("SpiceBeingReturned");
         final DatabaseReference spiceReturnedSuccess = database.getReference("SpiceReturnedSuccess");
 
+        //request
+        final DatabaseReference spiceBeingRequested = database.getReference("SpiceBeingRequested");
+        final DatabaseReference spiceRequestedSuccess = database.getReference("SpiceRequestedSuccess");
 
 
+
+        class ProgressBarAnimation extends Animation {
+            private ProgressBar progressBar;
+            private float from;
+            private float  to;
+
+            public ProgressBarAnimation(ProgressBar progressBar, float from, float to) {
+                super();
+                this.progressBar = progressBar;
+                this.from = from;
+                this.to = to;
+            }
+
+            @Override
+            protected void applyTransformation(float interpolatedTime, Transformation t) {
+                super.applyTransformation(interpolatedTime, t);
+                float value = from + (to - from) * interpolatedTime;
+                progressBar.setProgress((int) value);
+            }
+
+        }
 
         //Returns
         Button button1return = (Button) findViewById(R.id.button_return1);
@@ -70,6 +101,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v1) {
                 spiceBeingReturned.setValue(1);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v1, "Returning Spice 1", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -78,6 +111,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(2);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 2", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -86,6 +121,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(3);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 3", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -94,6 +131,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(4);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 4", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -102,6 +141,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(5);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 5", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -110,6 +151,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(6);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 6", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -118,6 +161,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(7);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 7", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -126,6 +171,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(8);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 8", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -134,6 +181,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(9);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 9", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -142,6 +191,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(10);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 10", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -150,6 +201,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(11);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 11", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -158,6 +211,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(12);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 12", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -166,6 +221,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(13);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 13", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -174,6 +231,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(14);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 14", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         //Returns
@@ -182,6 +241,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(15);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 15", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
@@ -191,20 +252,174 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 spiceBeingReturned.setValue(16);
                 spiceReturnedSuccess.setValue(0);
+                Snackbar.make(v, "Returning Spice 16", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
-//
-//        //Request
-//        Button button1request = (Button) findViewById(R.id.button_request1);
-//        button1request.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                spiceBeingRequested.setValue(1);
-//                spiceRequestedSuccess.setValue(0);
-//            }
-//        });
 
+        //Request
+        Button button1request = (Button) findViewById(R.id.button_request1);
+        button1request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(1);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 1", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
+        //Request
+        Button button2request = (Button) findViewById(R.id.button_request2);
+        button2request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(2);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 2", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+
+            }
+        });
+        //Request
+        Button button3request = (Button) findViewById(R.id.button_request3);
+        button3request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(3);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 3", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button4request = (Button) findViewById(R.id.button_request4);
+        button4request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(4);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 4", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button5request = (Button) findViewById(R.id.button_request5);
+        button5request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(5);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 5", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button6request = (Button) findViewById(R.id.button_request6);
+        button6request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(6);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 6", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button7request = (Button) findViewById(R.id.button_request7);
+        button7request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(7);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 7", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button8request = (Button) findViewById(R.id.button_request8);
+        button8request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(8);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 8", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button9request = (Button) findViewById(R.id.button_request9);
+        button9request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(9);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 9", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button10request = (Button) findViewById(R.id.button_request10);
+        button10request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(10);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 10", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button11request = (Button) findViewById(R.id.button_request11);
+        button11request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(11);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 11", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button12request = (Button) findViewById(R.id.button_request12);
+        button12request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(12);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 12", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button13request = (Button) findViewById(R.id.button_request13);
+        button13request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(13);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 13", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button14request = (Button) findViewById(R.id.button_request14);
+        button14request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(14);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 14", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button15request = (Button) findViewById(R.id.button_request15);
+        button15request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(15);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 15", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        //Request
+        Button button16request = (Button) findViewById(R.id.button_request16);
+        button16request.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                spiceBeingRequested.setValue(16);
+                spiceRequestedSuccess.setValue(0);
+                Snackbar.make(v, "Requesting Spice 16", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
 
 
@@ -217,7 +432,12 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
-                tv1.setText(Integer.toString(value));
+                tv1.setText(Integer.toString(value) + "%");
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice1progress);
+                //progressBar.setProgress(value);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -236,6 +456,11 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv2.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice2progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
+
 
             }
 
@@ -254,6 +479,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv3.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice3progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -272,6 +501,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv4.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice4progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -290,6 +523,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv5.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice5progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -308,6 +545,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv6.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice6progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -326,6 +567,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv7.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice7progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -344,6 +589,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv8.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice8progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -362,6 +611,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv9.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice9progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -380,6 +633,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv10.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice10progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -398,6 +655,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv11.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice11progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -416,6 +677,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv12.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice12progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -434,6 +699,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv13.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice13progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -451,6 +720,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv14.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice14progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -469,6 +742,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv15.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice15progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -487,6 +764,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv16.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice16progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -505,6 +786,10 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 int value = dataSnapshot.getValue(int.class);
                 tv17.setText(Integer.toString(value));
+                ProgressBar progressBar = (ProgressBar) findViewById(R.id.spice17progress);
+                ProgressBarAnimation anim = new ProgressBarAnimation(progressBar, progressBar.getProgress(), value);
+                anim.setDuration(1000);
+                progressBar.startAnimation(anim);
 
             }
 
@@ -522,13 +807,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 if(flag[0]) {
-                    Snackbar.make(view, "Updated Firebase", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "Running Inventory", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
-                  //  spice1.setValue(1);
+                    InventoryStart.setValue(1);
                     flag[0] = false;
                 }
                 else if(!flag[0]){
-                    Snackbar.make(view, "Updated Firebase", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "Running Inventory", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                    // spice1.setValue(0);
                     flag[0] = true;
@@ -586,15 +871,11 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_inventory) {
             // Handle the camera action
-        }  else if (id == R.id.nav_notifications) {
-
-        } else if (id == R.id.nav_logout) {
+        }   else if (id == R.id.nav_logout) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_settings) {
-
-        } else if (id == R.id.rate_us) {
 
         }
 
@@ -602,4 +883,10 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+
+
+
 }

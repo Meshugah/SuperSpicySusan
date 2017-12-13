@@ -52,6 +52,19 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice1value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice1progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,6 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request1"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
@@ -111,6 +125,18 @@
                     android:textColor="#000"
                     android:textSize="18sp"/>
 
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice2value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice2progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -120,6 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request2"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
@@ -171,6 +198,18 @@
                     android:textColor="#000"
                     android:textSize="18sp"/>
 
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice3value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice3progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -180,6 +219,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request3"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
@@ -231,6 +271,18 @@
                     android:textColor="#000"
                     android:textSize="18sp"/>
 
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice4value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice4progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -240,11 +292,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request4"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
+                    android:id="@+id/button_return4"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -288,6 +342,18 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice5value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice5progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -297,12 +363,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request5"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return4"
+                    android:id="@+id/button_return5"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -346,6 +413,18 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice6value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice6progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -355,12 +434,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request6"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return5"
+                    android:id="@+id/button_return6"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -404,6 +484,18 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice7value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice7progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -413,12 +505,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request7"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return6"
+                    android:id="@+id/button_return7"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -462,6 +555,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice8value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice8progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -471,13 +575,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request8"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
 
-                    android:id="@+id/button_return7"
+                    android:id="@+id/button_return8"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -521,6 +626,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice9value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice9progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
 
             </RelativeLayout>
             <LinearLayout
@@ -531,13 +647,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request9"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
 
-                    android:id="@+id/button_return8"
+                    android:id="@+id/button_return9"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -581,6 +698,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice10value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice10progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -590,13 +718,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request10"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-
-                    android:id="@+id/button_return9"
+                    android:id="@+id/button_return10"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -640,6 +768,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice11value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice11progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
 
             </RelativeLayout>
             <LinearLayout
@@ -650,13 +789,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request11"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-
-                    android:id="@+id/button_return10"
+                    android:id="@+id/button_return11"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -700,6 +839,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice12value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice12progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
 
             </RelativeLayout>
             <LinearLayout
@@ -710,13 +860,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request12"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
 
-                    android:id="@+id/button_return11"
+                    android:id="@+id/button_return12"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -760,6 +911,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice13value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice13progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -769,12 +931,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request13"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return12"
+                    android:id="@+id/button_return13"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -819,6 +982,19 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice14value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice14progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
+
+
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -828,12 +1004,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request14"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return13"
+                    android:id="@+id/button_return14"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -877,6 +1054,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice15value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice15progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -886,12 +1074,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request15"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return14"
+                    android:id="@+id/button_return15"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -935,6 +1124,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice16value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice16progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -944,12 +1144,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request16"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return15"
+                    android:id="@+id/button_return16"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
@@ -993,6 +1194,17 @@
                     android:paddingLeft="30dp"
                     android:textColor="#000"
                     android:textSize="18sp"/>
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spice17value"
+                    android:paddingTop="5dp"
+                    android:id="@+id/spice17progress"
+                    android:paddingLeft="30dp"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:progress="30"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1002,12 +1214,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Request"
+                    android:id="@+id/button_request17"
                     android:theme="@style/PrimaryFlatButton" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Return"
-                    android:id="@+id/button_return16"
+                    android:id="@+id/button_return17"
                     android:theme="@style/PrimaryFlatButton" />
             </LinearLayout>
 
